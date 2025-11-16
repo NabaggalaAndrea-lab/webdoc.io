@@ -1,0 +1,88 @@
+/* Basic page padding and readable font */
+body {
+	font-family: Arial, sans-serif;
+	margin: 10px;
+	padding: 0;
+}
+
+header,
+section,
+footer {
+	border: 1px solid black;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+nav {
+	margin-bottom: 10px;
+	text-align: center;
+	margin-right: 381px;
+	right: -223px;
+	position: relative;
+	top: 50%;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+	body {
+		font-size: 16px;
+	}
+
+	nav {
+		display: block;
+	}
+
+	nav a {
+		display: block;
+		text-align: center;
+		margin: 5px 0;
+	}
+}
+.schools {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.school {
+	flex: 1 1 calc(40% - 10px);
+	border: 1px solid black;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+/* @media (max-width: 600px) {
+	.school {
+		flex: 1 1 100%;
+	}
+} */
+.schools-list {
+  list-style-type: disc; /* default bullet points */
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.schools-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Optional: make list more readable on smaller screens */
+@media (max-width: 500px) {
+  .schools-list li {
+    font-size: 14px;
+  }
+}
